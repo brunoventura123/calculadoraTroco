@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catura Market</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <header><img src="caturamarket.png" alt=""><h1>Catura Market</h1></header>
+    <fieldset>
+        <legend>Caixa</legend>
+        <label for="productValue">
+            Valor do produto:
+            <input type="number" name="productValue" id="price" autofocus="true">
+            <button onclick="save()" type="submit" id="save">Salvar</button>
+        </label>
+        <label for="">
+            Valor Total: 
+            <input type="text" name="totalValue" id="totalValue">
+        </label>
+    <section style="display: flex; flex-direction: column;">
+        <label for="">
+            Valor Recebido: 
+            <input type="number" name="amountReceived" id="aReceived">
+        </label>
+        <label for="">
+            <button type="submit" onclick="totalToPay()">Total a pagar</button>
+            <button onclick="clean()">Limpar</button>
+        </label>
+        <p id="showFull"></p>
+    </section>
+</fieldset>
+</div>
+<footer>&copy; Bruno Ventura</footer>
+    <script src="scritp.js"></script>
+</body>
+</html>
