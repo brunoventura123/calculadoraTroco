@@ -3,7 +3,7 @@
     margin: 0;
 }
 body{
-   background-image: url('../calc de troco/Super.png');
+   background-image: url('/Super.png');
    background-size: cover;
    background-position: center;
    height: 100vh;
