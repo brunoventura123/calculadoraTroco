@@ -13,7 +13,7 @@ function save(){
             valor = Number(price.value)
             showFull.innerHTML += `R$ ${valor.toFixed(2)}<br/>`
             soma = Number(soma) + Number(valor)
-            tValue.innerHTML = `R$ ${soma.toFixed(2)}`
+            tValue.innerHTML = `R$ ${soma.toFixed(2)}` 
             price.value = ''
     }
 }
