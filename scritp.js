@@ -21,9 +21,9 @@ function totalToPay(){
      if(troco == '' && aReceived.value !== '' && tValue.innerHTML !== ''){
             troco = Number(aReceived.value) - Number(soma)
             showFull.innerHTML = `${showFull.innerHTML} <hr/>Total: ${tValue.innerHTML}
-            <br/> Valor recebido: R$ ${Number(aReceived.value).toFixed(2)} <br/> Troco: R$ ${troco.toFixed(2)}<br/><br/>`
+            <br/> Valor recebido: R$ ${Number(aReceived.value).toFixed(2)} <br/><p style="color: green">Troco: R$ ${troco.toFixed(2)}</p><br/>`
             if(troco < 0){
-                showFull.innerHTML += '<br/><p style="color:red;">Valor digitado está errado!</p><br/>'
+                showFull.innerHTML += '<p style="color:red;">Valor digitado está errado!</p><br/>'
             }
         }
     
