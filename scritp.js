@@ -39,6 +39,7 @@ function clean(){
     soma = ''
 }
 
+
 /*
 local para digitar o valor do produto
 botao para salvar esse valor
