@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 body{
    background-image: url('images/Super.png');
@@ -20,7 +21,6 @@ header img {
     box-shadow: 2px 2px 4px #000;
 }
 h1 {
-    text-align: center;
     color: #ffde59;
     text-shadow: 2px 2px 5px #000;
     margin-left: 10px;
@@ -36,37 +36,33 @@ fieldset{
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.8);
     border: 2px solid #000;
-    font-size: 20px;
-    font-weight: bold;
     color: #fff;
+    font-size: 23px;
 }
 legend {
-    font-size: 28px;
-    text-shadow: 1px 1px 5px #000;
-}
-form {
-    display: flex;
-    flex-direction: column;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px #000;
 }
 button {
-    max-width: 150px;
     margin-bottom: 20px;
     display: inline-block;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
-    border: 1px solid #221e21;
+    border: 1px solid #ddd;
     color: #ff7700;
     padding: 5px 7px;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 23px;
 }
 button:hover {
     background-color: rgba(0, 0, 0, 0.5);
 }
 input {
+    font-size: 23px;
     margin-bottom: 20px;
+    margin-top: 20px;
     background-color: rgba(0, 0, 0, 0);
-    border: 1px solid #221e21;
+    border: 1px solid #ddd;
     padding: 5px;
     border-radius: 5px;
     color: #fff;
@@ -78,12 +74,11 @@ input {
 }
 #totalValue{
     width: 200px;
-    height: 30px;
-    margin-bottom: 20px;
+    height: 40px;
     margin-left: 10px;
     background-color: rgba(0, 0, 0, 0);
-    border: 1px solid #221e21;
-    padding: 3px;
+    border: 1px solid #ddd;
+    padding: 5px;
     border-radius: 5px;
     color: #fff;
 }
@@ -91,7 +86,6 @@ input {
     width: 100%;
     height: 270px;
     overflow: auto;
-    word-wrap:break-word ;
     border-bottom: 3px solid #fff;
     border-top: 3px solid #fff;
     border-left: 3px solid orangered;
@@ -123,4 +117,23 @@ hr {
         flex-direction: column;
         align-items: center;
     }
+    fieldset{
+        font-size: 15px;
+    }
+    legend {
+        font-size: 30px;
+    }
+    button {
+        font-size: 15px;
+        padding: 3px 7px;
+    }
+    input {
+        font-size: 15px;
+        width: 50%;
+    }
+    #totalValue{
+        height: 30px;
+        width: 50%;
+    }
+    
 }

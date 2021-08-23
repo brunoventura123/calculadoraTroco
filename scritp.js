@@ -7,6 +7,7 @@ let aReceived = document.querySelector('#aReceived')
 let valor = ''
 let soma = ''
 let troco = ''
+
 function save(){
         if(price.value !== ''){
             valor = Number(price.value)
@@ -37,16 +38,6 @@ function clean(){
     troco = ''
     soma = ''
 }
-
-
-
-
-
-
-
-
-
-
 
 /*
 local para digitar o valor do produto
