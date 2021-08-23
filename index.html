@@ -15,12 +15,12 @@
         <label for="productValue">
             Valor do produto:
             <input type="number" name="productValue" id="price" autofocus="true">
-            <button onclick="save()" type="submit" id="save">Salvar</button>
+            <button onclick="save()" type="submit" id="save">Adicionar</button>
         </label>
-        <label for="">
-            Valor Total: 
-            <input type="text" name="totalValue" id="totalValue">
-        </label>
+        <div style="display: flex;">
+           <p>Valor Total:</p>  
+            <div id="totalValue"></div>
+        </div>
     <section style="display: flex; flex-direction: column;">
         <label for="">
             Valor Recebido: 

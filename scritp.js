@@ -7,31 +7,32 @@ let aReceived = document.querySelector('#aReceived')
 let valor = ''
 let soma = ''
 let troco = ''
-
 function save(){
         if(price.value !== ''){
             valor = Number(price.value)
             showFull.innerHTML += `R$ ${valor.toFixed(2)}<br/>`
             soma = Number(soma) + Number(valor)
-            tValue.value = `R$ ${soma.toFixed(2)}`
+            tValue.innerHTML = `R$ ${soma.toFixed(2)}`
             price.value = ''
     }
 }
 function totalToPay(){
-    if(troco == ''){
-        if(aReceived.value !== ''){
+     if(troco == '' && aReceived.value !== '' && tValue.innerHTML !== ''){
             troco = Number(aReceived.value) - Number(soma)
-            showFull.innerHTML = `${showFull.innerHTML} <hr/>Total: ${tValue.value}
-            <br/> Valor recebido: ${Number(aReceived.value).toFixed(2)} <br/> Troco: ${troco.toFixed(2)}<br/>`
+            showFull.innerHTML = `${showFull.innerHTML} <hr/>Total: ${tValue.innerHTML}
+            <br/> Valor recebido: R$ ${Number(aReceived.value).toFixed(2)} <br/> Troco: R$ ${troco.toFixed(2)}<br/><br/>`
+            if(troco < 0){
+                showFull.innerHTML += '<br/><p style="color:red;">Valor digitado está errado!</p><br/>'
+            }
         }
-    }
+    
     troco = ''
     aReceived.value = ''
 }
 function clean(){
     showFull.innerHTML = ''
     aReceived.value = ''
-    tValue.value = ''
+    tValue.innerHTML = ''
     valor = ''
     troco = ''
     soma = ''
