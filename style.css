@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Open Sans', sans-serif;
 }
 body{
    background-image: url('images/Super.png');
@@ -34,10 +34,10 @@ fieldset{
     flex: 1;
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #D4D9E0;
     border: 2px solid #000;
-    color: #fff;
-    font-size: 23px;
+    color: #000;
+    font-size: 16px;
 }
 legend {
     font-size: 40px;
@@ -48,52 +48,43 @@ button {
     display: inline-block;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
-    border: 1px solid #ddd;
-    color: #ff7700;
+    border: 1px solid #000;
     padding: 5px 7px;
     border-radius: 5px;
-    font-size: 23px;
+    font-size: 15px;
 }
 button:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #494f86;
 }
 input {
-    font-size: 23px;
+    font-size: 16px;
     margin-bottom: 20px;
     margin-top: 20px;
-    background-color: rgba(0, 0, 0, 0);
-    border: 1px solid #ddd;
+    background-color: #fff;
+    border: none;
     padding: 5px;
     border-radius: 5px;
-    color: #fff;
-    caret-color: #ff7700;
     outline: none;
-    -webkit-appearance: none;
-    -moz-appearance: textfield;
-    appearance: textfield;
 }
 #totalValue{
     width: 200px;
-    height: 40px;
+    height: 30px;
     margin-left: 10px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #fff;
     border: 1px solid #ddd;
     padding: 5px;
     border-radius: 5px;
-    color: #fff;
+    font-size: 15px;
 }
 #showFull {
     width: 100%;
     height: 270px;
     overflow: auto;
-    border-bottom: 3px solid #fff;
-    border-top: 3px solid #fff;
-    border-left: 3px solid orangered;
-    border-right: 3px solid orangered;
+    border: 3px solid #000;
     padding: 10px;
 }
 footer {
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.8);
