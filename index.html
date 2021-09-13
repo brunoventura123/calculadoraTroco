@@ -14,8 +14,8 @@
         <legend>Caixa</legend>
         <label for="productValue">
             Valor do produto:
-            <input type="number" name="productValue" id="price" autofocus="true">
-            <button onclick="save()" type="submit" id="save">Adicionar</button>
+            <input type="number" name="productValue" id="productPrice" autofocus="true">
+            <button onclick="AddProductValue()" type="submit">Adicionar Valor</button>
         </label>
         <div style="display: flex; align-items: center;">
            <p>Valor Total:</p>  
@@ -24,17 +24,17 @@
     <section style="display: flex; flex-direction: column;">
         <label for="">
             Valor Recebido: 
-            <input type="number" name="amountReceived" id="aReceived">
+            <input type="number" name="amountReceived" id="amountReceived">
         </label>
         <label for="">
             <button type="submit" onclick="totalToPay()">Total a pagar</button>
-            <button onclick="clean()">Limpar</button>
+            <button onclick="clean()">Limpar Tela</button>
         </label>
-        <p id="showFull"></p>
+        <p id="showAll"></p>
     </section>
 </fieldset>
 </div>
 <footer>&copy; Bruno Ventura</footer>
-    <script src="scritp.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
