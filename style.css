@@ -30,6 +30,9 @@ h1 {
     align-items: flex-start;
     height: 90%;
 }
+main{
+    width: 100%;
+}
 fieldset{
     flex: 1;
     display: flex;
@@ -43,7 +46,7 @@ legend {
     font-size: 40px;
     text-shadow: 2px 2px 5px #000;
 }
-button {
+button, #menssage {
     margin-bottom: 20px;
     display: inline-block;
     cursor: pointer;
@@ -56,10 +59,14 @@ button {
 button:hover {
     background-color: #494f86;
 }
+#menssage{
+    cursor:text;
+    background-color: none;
+    border: 0;
+}
 input {
     font-size: 16px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin:20px 0;
     background-color: #fff;
     border: none;
     padding: 5px;
@@ -101,7 +108,7 @@ hr {
         height: auto;
     }
     header {
-        width: 58%;
+        width: 60%;
         margin-bottom: 30px;
     }
     .container {

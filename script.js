@@ -5,8 +5,9 @@ var aReceived = document.querySelector('#amountReceived');
 var productValue = '';
 var total = '';
 var thing = '';
-function AddProductValue() {
-    if (price.value != '') {
+document.body.addEventListener('keydown', function (event) {
+    var code = event.keyCode;
+    if (code === 13 && price.value !== '') {
         productValue = price.value;
         showAll.innerHTML += "R$ " + Number(productValue).toFixed(2) + "<br/>";
         var soma = Number(total) + Number(productValue);
@@ -14,7 +15,7 @@ function AddProductValue() {
         tValue.innerHTML = "R$ " + Number(total).toFixed(2);
         price.value = '';
     }
-}
+});
 function totalToPay() {
     if (thing == '' && aReceived.value !== '' && tValue.innerHTML !== '') {
         var conta = Number(aReceived.value) - Number(total);

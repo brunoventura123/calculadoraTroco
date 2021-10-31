@@ -7,17 +7,18 @@ let aReceived = document.querySelector('#amountReceived') as HTMLInputElement
 let productValue = ''
 let total = ''
 let thing = ''
-
-function AddProductValue(){
-        if(price.value != ''){
-            productValue = price.value
-            showAll.innerHTML += `R$ ${Number(productValue).toFixed(2)}<br/>`
-            let soma = Number(total) + Number(productValue)
-            total = soma.toString()
-            tValue.innerHTML = `R$ ${Number(total).toFixed(2)}` 
-            price.value = ''
-    }
+document.body.addEventListener('keydown', function(event){
+    const code = event.keyCode;
+    if(code === 13 && price.value !== ''){
+        productValue = price.value
+        showAll.innerHTML += `R$ ${Number(productValue).toFixed(2)}<br/>`
+        let soma = Number(total) + Number(productValue)
+        total = soma.toString()
+        tValue.innerHTML = `R$ ${Number(total).toFixed(2)}` 
+        price.value = ''
 }
+})
+
 function totalToPay(){
      if(thing == '' && aReceived.value !== '' && tValue.innerHTML !== ''){
             let conta = Number(aReceived.value) - Number(total)
