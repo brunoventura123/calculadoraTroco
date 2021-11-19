@@ -27,6 +27,7 @@ function totalToPay(){
             <br/> Valor recebido: R$ ${Number(aReceived.value).toFixed(2)} <br/>
             <p style="color: green">Troco: R$ ${Number(thing).toFixed(2)}</p><br/>`
             Number(total)
+            Number(aReceived.value)
             if(aReceived.value < total){
                 showAll.innerHTML += '<p style="color:red;">Valor recebido é menor que o valor Total!</p><br/>'
             }
