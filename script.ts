@@ -12,8 +12,8 @@ document.body.addEventListener('keydown', function(event){
     if(code === 13 && price.value !== ''){
         productValue = price.value
         showAll.innerHTML += `R$ ${Number(productValue).toFixed(2)}<br/>`
-        let soma = Number(total) + Number(productValue)
-        total = soma
+        let add = Number(total) + Number(productValue)
+        total = add
         tValue.innerHTML = `R$ ${Number(total).toFixed(2)}` 
         price.value = ''
 }
@@ -21,8 +21,8 @@ document.body.addEventListener('keydown', function(event){
 
 function totalToPay(){
      if(thing == '' && aReceived.value !== '' && tValue.innerHTML !== ''){
-            let conta = Number(aReceived.value) - Number(total)
-            thing = conta.toString()
+            let account = Number(aReceived.value) - Number(total)
+            thing = account.toString()
             showAll.innerHTML = `${showAll.innerHTML} <hr/>Total: ${tValue.innerHTML}
             <br/> Valor recebido: R$ ${Number(aReceived.value).toFixed(2)} <br/>
             <p style="color: green">Troco: R$ ${Number(thing).toFixed(2)}</p><br/>`
